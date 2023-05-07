@@ -71,10 +71,12 @@ export default function Homepage(){
   useEffect(()=>{
     dispatch(fetchAllQuotes());
     setArray(quotes.quotes);
+      // eslint-disable-next-line
   },[allQuotes])
   useEffect(()=>{
     dispatch(fetchRandomQuote());
-    setArray(randomQuote)
+    setArray(randomQuote);
+      // eslint-disable-next-line
   },[singleQuote])
   
 

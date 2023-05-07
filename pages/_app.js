@@ -1,5 +1,5 @@
 import {Provider} from 'react-redux'
-import store from './store'
+import store from '../reducers/store'
 import '../styles/materialize.css'
 
 

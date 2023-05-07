@@ -1,9 +1,9 @@
 import { useState,useEffect } from "react";
 import {useSelector, useDispatch} from 'react-redux';
-import { fetchAllQuotes } from "./reducers/fetchAllQuotesSlice";
-import { fetchRandomQuote } from "./reducers/fetchRandomQuoteSlice";
+import { fetchAllQuotes } from "../reducers/fetchAllQuotesSlice";
+import { fetchRandomQuote } from "../reducers/fetchRandomQuoteSlice";
 import {motion} from 'framer-motion'
-import Date from './date';
+import Date from '../reducers/date';
 const quotesProvider = require("../supabase");
 const quotesGetter = quotesProvider.from("quotes");
 import Link from 'next/link';

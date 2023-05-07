@@ -1,5 +1,5 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
-const quotesProvider = require("../../supabase");
+const quotesProvider = require("../supabase");
 const quotesGetter = quotesProvider.from("quotes");
 
 export const fetchAllQuotes = createAsyncThunk('quotes/fetchAllQuotes', async ()=>{

@@ -1,0 +1,106 @@
+.container {
+   display: flex;
+
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+  }
+.header {
+    padding: 1rem 5rem
+}
+.header h3 {
+    margin-left: 6rem;
+}
+
+ .navlist button {
+    margin: 0 2rem;
+    background: rgb(3, 84, 25);
+
+ }
+ .navlist button:hover{
+    background: black !important;
+    color: black  !important
+ }
+ .navlist a {
+   color: white
+ }
+
+ .quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition:  2s ease-in-out;
+  }
+  .fetch{
+    display: flex;
+    flex-direction: row;
+  }
+  .fetch button {
+    margin: 5rem
+  }
+  .fetch button:hover {
+    background: white !important;
+    color: black  !important
+  }
+ 
+  .quote{
+    border: solid 1px black;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 5px 5px rgb(240, 157, 157);
+
+  }
+  .format{
+    font-weight: 300;
+    font-size: large;
+    font-family: 'Pacifico', cursive;
+  }
+  .quote button {
+    margin: 1rem
+  }
+  .quote button:hover{
+    background: white !important;
+    color: black  !important
+  }
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5551516e;
+    border: 1px solid #ccc;
+    padding: 50px;
+    width: 300px;
+    max-width: 100%;
+    z-index: 9999;
+  }
+  .none {
+    display: none
+  }
+  .share {
+    float: right;
+    color: rgb(3, 84, 25);
+    margin-top: -10.5rem
+  }
+  @media(max-width: 870px){
+    .share{
+        margin-top: 1.5rem
+      }
+  }
+  @media(max-width: 648px){
+    .navlist button{
+      width: 100% !important;
+      margin: 0.1rem !important;
+    }
+    .fetch button {
+        margin:0 
+      }
+
+  }
+  @media(max-width: 470px){
+    .header{
+      padding: 0
+    }
+  }

@@ -1,0 +1,29 @@
+.myform{
+    width: 50%;
+    display: block;
+    margin: 0 auto
+ }
+ 
+
+ 
+
+ .myform button {
+    
+     display: block;
+     margin: 1rem auto
+ }
+ .myform input::placeholder{
+    color: black
+ }
+ .header {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 5rem;
+ }
+ .quote{
+    border: solid 1px black;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 5px 5px rgb(240, 157, 157);
+
+  }

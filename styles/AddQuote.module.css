@@ -1,0 +1,41 @@
+.myform{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.myform label{
+   color: black
+}
+
+.myform textarea{
+   height: 100px
+}
+.myform button {
+    margin-top: 1rem;
+    width: 10%
+}
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5551516e;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    width: 600px;
+
+    z-index: 9999;
+  }
+  .popup p{
+    margin-left:13rem
+  }

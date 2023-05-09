@@ -5,7 +5,6 @@ import { fetchRandomQuote } from "../reducers/fetchRandomQuoteSlice";
 import {motion} from 'framer-motion'
 import Date from '../reducers/date';
 const quotesProvider = require("../supabase");
-const quotesGetter = quotesProvider.from("quotes");
 import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/Homepage.module.css';
@@ -28,6 +27,7 @@ export default function Homepage(){
     const randomQuote = useSelector((state)=> state.singleQuote.singleQuote);
   
     const handleDelete = async (quoteId) => {
+     const quotesGetter = quotesProvider.from("quotes");
      const {error} = await quotesGetter.delete().eq('id', quoteId);
      let x = array.filter((item) => item.id !== quoteId);
      if(error) throw Error
